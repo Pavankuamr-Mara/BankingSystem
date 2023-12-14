@@ -1,4 +1,4 @@
-﻿namespace Data.Models
+﻿namespace Domain.Models
 {
     public class Account(int balance, Guid userId)
     {

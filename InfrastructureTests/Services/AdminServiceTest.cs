@@ -1,5 +1,5 @@
 ﻿using DAL;
-using Data.Models;
+using Domain.Models;
 using Infrastructure.Dtos;
 using Infrastructure.Services;
 using Infrastructure.Services.Interfaces;

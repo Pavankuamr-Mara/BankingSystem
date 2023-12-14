@@ -1,5 +1,5 @@
 ﻿using DAL;
-using Data.Models;
+using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.Dtos;
 using System.Data;

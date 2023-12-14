@@ -116,3 +116,6 @@ C:\Users\pavan.mara\Desktop\BankingSystem\BankingSystemWebAPI\obj\Debug\net8.0\r
 C:\Users\pavan.mara\Desktop\BankingSystem\BankingSystemWebAPI\obj\Debug\net8.0\WebAPI.pdb
 C:\Users\pavan.mara\Desktop\BankingSystem\BankingSystemWebAPI\obj\Debug\net8.0\WebAPI.genruntimeconfig.cache
 C:\Users\pavan.mara\Desktop\BankingSystem\BankingSystemWebAPI\obj\Debug\net8.0\ref\WebAPI.dll
+C:\Users\pavan.mara\Desktop\BankingSystem\BankingSystemWebAPI\obj\Debug\net8.0\WebAPI.sourcelink.json
+C:\Users\pavan.mara\Desktop\BankingSystem\BankingSystemWebAPI\bin\Debug\net8.0\Domain.dll
+C:\Users\pavan.mara\Desktop\BankingSystem\BankingSystemWebAPI\bin\Debug\net8.0\Domain.pdb

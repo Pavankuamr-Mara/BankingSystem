@@ -8,8 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "Infrastructure/1.0.0": {
         "dependencies": {
-          "DAL": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "8.0.0"
+          "DAL": "1.0.0"
         },
         "runtime": {
           "Infrastructure.dll": {}
@@ -140,10 +139,19 @@
       },
       "DAL/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.InMemory": "8.0.0"
+          "Domain": "1.0.0"
         },
         "runtime": {
           "DAL.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "8.0.0"
+        },
+        "runtime": {
+          "Domain.dll": {}
         }
       }
     }
@@ -239,6 +247,11 @@
       "hashPath": "microsoft.extensions.primitives.8.0.0.nupkg.sha512"
     },
     "DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

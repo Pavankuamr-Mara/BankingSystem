@@ -1,15 +1,15 @@
 ﻿using DAL.Repositories;
 using DAL.Repositories.Interfaces;
-using Data.Models;
-using EFCoreInMemoryDbDemo;
+using Domain.Models;
+using Domain;
 
 namespace DAL
 {
     public class UnitOfWork : IDisposable, IUnitOfWork
     {
         private readonly AppDbContext _context = new AppDbContext();
-        private IGenericRepository<User> _userRepository;
-        private IGenericRepository<Account> _accountRepository;
+        private IGenericRepository<User>? _userRepository;
+        private IGenericRepository<Account>? _accountRepository;
 
         public UnitOfWork()
         {

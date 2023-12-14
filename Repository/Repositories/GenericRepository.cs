@@ -1,5 +1,5 @@
 ﻿using DAL.Repositories.Interfaces;
-using EFCoreInMemoryDbDemo;
+using Domain;
 using Microsoft.EntityFrameworkCore;
 
 namespace DAL.Repositories

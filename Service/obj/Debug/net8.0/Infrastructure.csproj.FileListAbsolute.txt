@@ -28,3 +28,6 @@ C:\Users\pavan.mara\Desktop\BankingSystem\Service\obj\Debug\net8.0\Infrastructur
 C:\Users\pavan.mara\Desktop\BankingSystem\Service\obj\Debug\net8.0\refint\Infrastructure.dll
 C:\Users\pavan.mara\Desktop\BankingSystem\Service\obj\Debug\net8.0\Infrastructure.pdb
 C:\Users\pavan.mara\Desktop\BankingSystem\Service\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Users\pavan.mara\Desktop\BankingSystem\Service\obj\Debug\net8.0\Infrastructure.sourcelink.json
+C:\Users\pavan.mara\Desktop\BankingSystem\Service\bin\Debug\net8.0\Domain.dll
+C:\Users\pavan.mara\Desktop\BankingSystem\Service\bin\Debug\net8.0\Domain.pdb

@@ -1,14 +1,9 @@
 ﻿using DAL;
-using Infrastructure.Services.Interfaces;
-using Infrastructure.Services;
-using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Data.Models;
+using Domain.Models;
 using Infrastructure.Dtos;
+using Infrastructure.Services;
+using Infrastructure.Services.Interfaces;
+using Moq;
 
 namespace InfrastructureTests.Services
 {

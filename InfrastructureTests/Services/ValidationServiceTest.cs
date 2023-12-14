@@ -1,4 +1,4 @@
-using Data.Models;
+using Domain.Models;
 using FluentAssertions;
 using Infrastructure.Exceptions;
 using Infrastructure.Services;
