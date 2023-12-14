@@ -1,9 +1,9 @@
 ﻿using DAL;
 using Domain.Models;
-using Microsoft.EntityFrameworkCore;
 using Infrastructure.Dtos;
-using System.Data;
 using Infrastructure.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using System.Data;
 
 namespace Infrastructure.Services
 {
