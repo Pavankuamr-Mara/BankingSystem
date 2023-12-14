@@ -1,7 +1,7 @@
-﻿using Data.Models;
+﻿using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace EFCoreInMemoryDbDemo
+namespace Domain
 {
     public class AppDbContext : DbContext
     {

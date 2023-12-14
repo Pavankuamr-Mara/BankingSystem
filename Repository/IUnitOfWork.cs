@@ -1,5 +1,5 @@
 ﻿using DAL.Repositories.Interfaces;
-using Data.Models;
+using Domain.Models;
 
 namespace DAL
 {

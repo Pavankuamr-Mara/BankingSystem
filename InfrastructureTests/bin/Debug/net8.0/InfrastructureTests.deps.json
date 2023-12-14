@@ -1239,16 +1239,25 @@
       "xunit.runner.visualstudio/2.4.5": {},
       "DAL/1.0.0": {
         "dependencies": {
+          "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.InMemory": "8.0.0"
         },
         "runtime": {
           "DAL.dll": {}
         }
       },
+      "Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "8.0.0"
+        },
+        "runtime": {
+          "Domain.dll": {}
+        }
+      },
       "Infrastructure/1.0.0": {
         "dependencies": {
-          "DAL": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "8.0.0"
+          "DAL": "1.0.0"
         },
         "runtime": {
           "Infrastructure.dll": {}
@@ -2019,6 +2028,11 @@
       "hashPath": "xunit.runner.visualstudio.2.4.5.nupkg.sha512"
     },
     "DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
