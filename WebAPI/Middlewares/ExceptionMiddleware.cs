@@ -1,25 +1,24 @@
 ﻿using Infrastructure.Dtos;
-using Infrastructure.Exceptions;
 using System.Net;
 
 namespace WebAPI.Exceptions
 {
-    public class ExceptionMiddleware(RequestDelegate next)
+    public class ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> logger)
     {
         private readonly RequestDelegate _next = next;
+        private readonly ILogger<ExceptionMiddleware> _logger = logger;
 
         public async Task InvokeAsync(HttpContext httpContext)
         {
             try
             {
+                _logger.LogInformation($"Exexuting method: {httpContext.GetRouteData}");
                 await _next(httpContext);
             }
-            catch(RecordNotFoundException ex)
-            {
-                await HandleExceptionAsync(httpContext, ex);
-            }
+
             catch (Exception ex)
             {
+                _logger.LogError($"Something went wrong: {ex}");
                 await HandleExceptionAsync(httpContext, ex);
             }
         }
@@ -27,15 +26,7 @@ namespace WebAPI.Exceptions
         private static async Task HandleExceptionAsync(HttpContext context, Exception exception)
         {
             context.Response.ContentType = "application/json";
-            context.Response.StatusCode = exception switch
-            {
-                RecordNotFoundException => (int)HttpStatusCode.NotFound,
-                DeceedingBalanceLimitException => (int)HttpStatusCode.ExpectationFailed,
-                ExceedingDepositLimitException => (int)HttpStatusCode.ExpectationFailed,
-                ExceedingWithdrawalLimitException => (int)HttpStatusCode.ExpectationFailed,
-                ZeroOrNegativeAmountException => (int)HttpStatusCode.BadRequest,
-                _ => (int)HttpStatusCode.InternalServerError
-            };
+            context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
             await context.Response.WriteAsync(new ErrorDetails()
             {
